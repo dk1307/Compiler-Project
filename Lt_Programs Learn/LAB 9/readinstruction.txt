@@ -1,0 +1,13 @@
+http://gnuwin32.sourceforge.net/packages/flex.htm
+http://gnuwin32.sourceforge.net/packages/bison.htm
+when installing on windows you store this in c:/gnuwin32 folder and not in c:/program files(X86)/gnuwin32
+
+https://sourceforge.net/projects/orwelldevcpp/
+
+set environment varialble and then run program
+
+Open a prompt, cd to the directory where your ".l" and ".y" are, and compile them with:
+
+flex hello.l
+bison -dy hello.y
+gcc lex.yy.c y.tab.c -o hello.exe

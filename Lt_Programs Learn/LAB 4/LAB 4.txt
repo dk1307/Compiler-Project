@@ -1,0 +1,23 @@
+Lab4: Implement scanner phase of compiler using flex 
+
+Write an appropriate language description for a
+layman language which can do mathematical
+operations using English like sentences.
+Example of valid program in this language is -
+Add 100 ,200,300,400 . Subtract 250 from result.
+Multiply 400 to it . Divide the answer by 2. Show me
+the answer.
+
+
+Find the RE and regular definition of your language and write it in flex. 
+-Submit two files F1) Flex programs as per lab manual.
+                               F2) Flex program for your project allotted. 
+
+
+
+-Format of submission :- 
+F1) Flex code:- 
+Output screenshot :-  
+F2) Flex code and output screenshot  
+          project title :- 
+          Group details:- 

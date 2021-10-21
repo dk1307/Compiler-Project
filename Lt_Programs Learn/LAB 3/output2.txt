@@ -1,0 +1,32 @@
+operator identify: add
+Number identify: 100
+Number identify: 200
+Number identify: 300
+Number identify: 400
+It shown end of line: ?
+Started New Line. 
+operator identify: sub
+Number identify: 250
+Keyword identify: From
+Keyword identify: Result
+It shown end of line: ?
+Started New Line. 
+operator identify: mul
+Number identify: 400
+Keyword identify: to
+Keyword identify: it
+It shown end of line: ?
+Started New Line. 
+operator identify: div
+Keyword identify: the
+Keyword identify: Answer
+Keyword identify: by
+Number identify: 2
+It shown end of line: ?
+Started New Line. 
+Keyword identify: show
+Keyword identify: me
+Keyword identify: the
+Keyword identify: Answer
+It shown end of line: ?
+Started New Line. 

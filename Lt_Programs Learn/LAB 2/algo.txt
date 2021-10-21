@@ -1,0 +1,285 @@
+while not eof do
+state := 0;
+while not eof do
+input(ch);
+case state of
+	0:case ch of
+		digit: state:= 1;
+		'a'|'A': state:=9;
+		's'|'S': state:=17;
+		'm'|'M': state:=28;
+		'd'|'D': state:=37;
+		'f'|'F': state:=43;
+		'b': state:=47;
+		't': state:=49;
+		'r'|'R': state:=53;
+		'i': state:=59;
+		'?': state:=61;
+		' '|'\t: state:=62;
+		else: state:=63;
+	end case
+	1:case ch of
+		digit: state:=1;
+		'.': state:=3;
+		'e'|'E': state:=5;
+		else: state:2;
+	end case;
+	2:case ch of
+		unput(ch);//return int
+		exit while;
+	end case;
+	3:case ch of
+		digit: state:=4;
+		else: exit while;
+	end case;
+	4:case ch of
+		digit: state:=4;
+		'e'|'E': state:=5;
+		else: state:=8;
+	end case;
+	5:case ch of
+		'+'|'-': state:=6;
+		else: exit while;
+	end case;
+	6:case ch of
+		digit: state:=7;
+		else: exit while;
+	end case;
+	7:case ch of
+		digit: state:=7;
+		else: state:=8;
+	end case;
+	8:case ch of
+		unput(ch);//return float
+		exit while;
+	end case;
+	9:case ch of
+		'd': state:=10;
+		'n': state:=12;
+		else: exit while;
+	end case;
+	10:case ch of
+		'd': state:=11;
+		else: exit while;
+	end case;
+	11:case ch of
+		unput(ch);//return add
+		exit while;
+	end case;
+	12:case ch of	
+		's': state:=13;
+		else: exit while;
+	end case;
+	13:case ch of	
+		'w': state:=14;
+		else: exit while;
+	end case;
+	14:case ch of	
+		'e': state:=15;
+		else: exit while;
+	end case;
+	15:case ch of	
+		'r': state:=16;
+		else: exit while;
+	end case;
+	16:case ch of	
+		unput(ch);//return answer
+		exit while;
+	end case;
+	17:case ch of
+		'u': state:=18;
+		'h': state:=25;
+		else: exit while;
+	end case;
+	18:case ch of	
+		'b': state:=19;
+		else: exit while;
+	end case;
+	19:case ch of	
+		't': state:=20;
+		else: exit while;
+	end case;
+	20:case ch of	
+		'r': state:=21;
+		else: exit while;
+	end case;
+	21:case ch of	
+		'a': state:=22;
+		else: exit while;
+	end case;
+	22:case ch of	
+		'c': state:=23;
+		else: exit while;
+	end case;
+	23:case ch of	
+		't': state:=24;
+		else: exit while;
+	end case;
+	24:case ch of	
+		unput(ch);//return subtract
+		exit while;
+	end case;
+	25:case ch of	
+		'o': state:=26;
+		else: exit while;
+	end case;
+	26:case ch of	
+		'w': state:=27;
+		else: exit while;
+	end case;
+	27:case ch of	
+		unput(ch);//return show
+		exit while;
+	end case;
+	28:case ch of
+		'u': state:=29;
+		'e': state:=36;
+		else: exit while;
+	end case;
+	29:case ch of	
+		'l': state:=30;
+		else: exit while;
+	end case;
+	30:case ch of	
+		't': state:=31;
+		else: exit while;
+	end case;
+	31:case ch of	
+		'i': state:=32;
+		else: exit while;
+	end case;
+	32:case ch of	
+		'p': state:=33;
+		else: exit while;
+	end case;
+	33:case ch of	
+		'l': state:=34;
+		else: exit while;
+	end case;
+	34:case ch of	
+		'y': state:=35;
+		else: exit while;
+	end case;
+	35:case ch of	
+		unput(ch);//return multiply
+		exit while;
+	end case;
+	36:case ch of	
+		unput(ch);//return me
+		exit while;
+	end case;
+	37:case ch of	
+		'i': state:=38;
+		else: exit while;
+	end case;
+	38:case ch of	
+		'v': state:=39;
+		else: exit while;
+	end case;
+	39:case ch of	
+		'i': state:=40;
+		else: exit while;
+	end case;
+	40:case ch of	
+		'd': state:=41;
+		else: exit while;
+	end case;
+	41:case ch of	
+		'e': state:=42;
+		else: exit while;
+	end case;
+	42:case ch of	
+		unput(ch);//return divide
+		exit while;
+	end case;
+	43:case ch of	
+		'r': state:=44;
+		else: exit while;
+	end case;
+	44:case ch of	
+		'o': state:=45;
+		else: exit while;
+	end case;
+	45:case ch of	
+		'm': state:=46;
+		else: exit while;
+	end case;
+	46:case ch of	
+		unput(ch);//return from
+		exit while;
+	end case;
+	47:case ch of	
+		'y': state:=48;
+		else: exit while;
+	end case;
+	48:case ch of	
+		unput(ch);//return by
+		exit while;
+	end case;
+	49:case ch of	
+		'o': state:=50;
+		'h': state:=51;
+		else: exit while;
+	end case;
+	50:case ch of	
+		unput(ch);//return to
+		exit while;
+	end case;
+	51:case ch of	
+		'e': state:=52;
+		else: exit while;
+	end case;
+	52:case ch of	
+		unput(ch);//return the
+		exit while;
+	end case;
+	53:case ch of	
+		'e': state:=54;
+		else: exit while;
+	end case;
+	54:case ch of	
+		's': state:=55;
+		else: exit while;
+	end case;
+	55:case ch of	
+		'u': state:=56;
+		else: exit while;
+	end case;
+	56:case ch of	
+		'l': state:=57;
+		else: exit while;
+	end case;
+	57:case ch of	
+		't': state:=58;
+		else: exit while;
+	end case;
+	58:case ch of	
+		unput(ch);//return result
+		exit while;
+	end case;
+	59:case ch of	
+		't': state:=60;
+		else: exit while;
+	end case;
+	60:case ch of	
+		unput(ch);//return it
+		exit while;
+	end case;
+	61:case ch of	
+		unput(ch);//return QM
+		exit while;
+	end case;
+	62:case ch of	
+		unput(ch);//return WS
+		exit while;
+	end case;
+	63:case ch of	
+		unput(ch);//return OTHER(error)
+		exit while;
+	end case;
+exit while;
+	
+	
+	
+		
+		

@@ -1,0 +1,10 @@
+LAB1:Turbo Prolog features and format
+LAB2:Using variables in Prolog
+LAB3:Usage of rules in Prolog
+LAB4:Input, Output and fail predicates in prolog 
+LAB5:Usage of arithmetic operators in Prolog 
+LAB6:Usage of cut(!),not,fail predicates in prolog
+LAB7:Usage of recursion in prolog
+LAB8:Usage of logical , arithmetic ,string operators in Prolog
+LAB9:Compound object and List
+LAB10:Dynamic database
