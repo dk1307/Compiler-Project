@@ -1,0 +1,5 @@
+add 100 ,200 ,300 ,400 ?
+sub 250 From Result ?
+mul 400 to it ?
+div the Answer by 2 ?
+show me the Answer ?
