@@ -1,10 +1,10 @@
-LAB1:Turbo Prolog features and format
-LAB2:Using variables in Prolog
-LAB3:Usage of rules in Prolog
-LAB4:Input, Output and fail predicates in prolog 
-LAB5:Usage of arithmetic operators in Prolog 
-LAB6:Usage of cut(!),not,fail predicates in prolog
-LAB7:Usage of recursion in prolog
-LAB8:Usage of logical , arithmetic ,string operators in Prolog
-LAB9:Compound object and List
-LAB10:Dynamic database
+LAB1:Study the Compilers 
+LAB2:Design DFA and algorithm for assigned language
+LAB3:Scanner phase implementation of assigned project in "C" language
+LAB4:Implement scanner phase of compiler using flex
+LAB5:left recursion removal
+LAB6:left factoring problem removal
+LAB7:Compute First and follow sets of given grammar
+LAB8:Yacc for sample language(Imp Calc)
+LAB9:Yacc useful for your language / any other highlevel langauge
+LAB10:Make recursive descendent parser 
